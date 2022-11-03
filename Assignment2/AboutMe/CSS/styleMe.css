@@ -1,107 +1,133 @@
 /**/
-*{
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    
-}
-
-/* Color Theme Swatches in RGBA */
-.need-to-sleep-so-bad-1-rgba { color: rgba(140, 128, 116, 1); }
-.need-to-sleep-so-bad-2-rgba { color: rgba(242, 226, 195, 1); }
-.need-to-sleep-so-bad-3-rgba { color: rgba(251, 253, 237, 1); }
-.need-to-sleep-so-bad-4-rgba { color: rgba(114, 33, 26, 1); }
-.need-to-sleep-so-bad-5-rgba { color: rgba(63, 19, 15, 1); }
 
 
-
-
-
-
-table,td,tr,th,caption{
-    border: 2px solid;
-
-    }
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 
 body {
-  
-    text-align: justify;
-    color: rgba(63, 19, 15, 1);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 3em 1em 3em 1em;
+
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    background-color: #E7F2FF;
+    color: rgb(55, 57, 95);
 
 }
-abbr{
-    background-color: aqua;
+header div {
+    margin-top: -50px;
+    width: 100vw;
+    position: fixed;
+    background-color: rgb(55, 57, 95);
+    /* box-shadow: 1px; */
+
 }
+main {
+    margin-top: 50px;
+    padding-top: 1em;
+}
+div.p{
+
+    padding-left: 20px;
+}
+em{
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+
 
 h1 {
-  
-    color:rgba(251, 253, 237, 1);
-    background-color:  rgba(114, 33, 26, 1);
-    background-clip:content-box;
-    font-size: 4vw;
-    font-variant: small-caps;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-    margin: 1vw 0em 1em 0em;
-
+    font-size: 14px;
+    padding-left: 12px;
+    color: rgb(252, 252, 252);
+}
+h2{
+    /* width: 60vw; */
+    background-color: rgb(55, 57, 95);
+    font-size: 11px;
+    padding-left: 12px;
+    color: rgb(250, 251, 253);
 
 }
-h2 {
-    color:rgba(251, 253, 237, 1);
-    background-color: rgba(114, 33, 26, 1);
-    background-clip:content-box;
-    font-size: 2vw;
-    
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    margin: 1em 0em 1em 0em;
 
+nav {
+    margin-left: 13px;
+    color: white;
 
 }
-nav{
-    margin-bottom: 30px;
-}
 
-a:link{
+nav>a {
+
     text-decoration: none;
-    color: rgba(63, 19, 15, 1);
-    margin-inline: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-inline-start: 0px;
-    font:normal bold 1em Verdana;
+    color: white;
+    font-size: 9px;
+    padding-right: 5px;
 }
 
-a:visited{
-    color: rgba(114, 33, 26, 1);
+nav>a:hover {
+    font-weight: bolder;
+    font-size: 10px;
 
-}
-a:hover{
-    /* background-color: rgba(114, 33, 26, 1); */
-    border-radius: 3px;
-    font-weight: 100;
+    color: white;
     
-    /* color: rgba(242, 226, 195, 1); */
+
 }
 
-ul {
-    list-style-type: none;
-    margin: 1em 1em 1em 1em;
-    font-size: 17px;
-    
+nav>a:visited {
+    text-decoration: none;
+    color:white;
 }
-li{
-    margin: 1em 1em 1em 1em;
+h3{
+    padding-top: 5px;
+    display: inline-block;
+}
+img{
+    box-shadow: 0 0 px , 0 0 5px ;
+}
+#image1{
+    display: inline;
+    
+    width: 150px;
+    height: 200px;
+}
+#image2{
+    display: inline;
+    
+    height: 200x;
+    width: 300px; 
 }
 #image{
-    margin-bottom: 30px;
-    margin-top: 20px;
-    border-radius: 100px;
-    border: rgba(114, 33, 26, 1) solid 3px;
+    border-radius: 500px;
+    border: 1px solid rgb(55, 57, 95);
 }
-#html:hover{
+ol>li{
+    font-weight: 700;
+}
+li>h5{
+    margin-top: 0px;
+    padding-left: 10px;
+}
+
+h5>p{
+    margin-top: -1px;
+    margin-bottom: -10px;
+    padding-left: 15px;
+    font-weight: 400;
+    font-style: normal;
+}
+a.imdb{
     text-decoration: none;
-    
+    color: brown;
+    font-weight: 500;
+}
+a.imdb:hover{
+    font-weight: 700;
+}
+a.imdb:visited{
+    text-decoration: none;
+    color: brown;
+    font-weight: 500;
 }
