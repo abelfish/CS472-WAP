@@ -36,9 +36,6 @@ em{
     font-weight: bold;
 }
 
-
-
-
 h1 {
     font-size: 14px;
     padding-left: 12px;
@@ -54,6 +51,7 @@ h2{
 }
 
 nav {
+    
     margin-left: 13px;
     color: white;
 
@@ -71,8 +69,6 @@ nav>a:hover {
     font-weight: bolder;
     font-size: 10px;
 
-    color: white;
-    
 
 }
 
@@ -86,13 +82,12 @@ h3{
 }
 
 #image1{
-    display: inline;
     
     width: 150px;
     height: 200px;
 }
 #image2{
-    display: inline;
+    
     height: 200px;
     width: 300px; 
 }
@@ -115,16 +110,17 @@ li>p{
     font-weight: 400;
     font-style: normal;
 }
-a.imdb{
+.imdb{
     text-decoration: none;
     color: brown;
     font-weight: 500;
 }
-a.imdb:hover{
+.imdb:hover{
     font-weight: 700;
 }
-a.imdb:visited{
+.imdb:visited{
     text-decoration: none;
     color: brown;
     font-weight: 500;
 }
+
