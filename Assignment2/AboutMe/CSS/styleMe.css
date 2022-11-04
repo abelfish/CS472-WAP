@@ -84,9 +84,7 @@ h3{
     padding-top: 5px;
     display: inline-block;
 }
-img{
-    box-shadow: 0 0 px , 0 0 5px ;
-}
+
 #image1{
     display: inline;
     
@@ -95,8 +93,7 @@ img{
 }
 #image2{
     display: inline;
-    
-    height: 200x;
+    height: 200px;
     width: 300px; 
 }
 #image{
