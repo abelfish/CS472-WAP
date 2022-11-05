@@ -139,7 +139,7 @@ div p{
 #l{
     color: gray;
     font-weight: lighter;
-    padding-right: 150px;
+    padding-right: 130px;
     margin-bottom: 1px;    
 }
 #l2{
@@ -168,7 +168,7 @@ div p{
 
 
 h3{
-    padding-right: 320px;
+    padding-right: 30px;
     font-size: 30px;
     margin-bottom: -10px;
 }
@@ -177,14 +177,11 @@ h3{
     height: 40px;
     border-color: lightskyblue;
 }
-.textfield:{
-        
-    border-color: lightskyblue;
-}
+
 #pass{
     color: rgb(130, 149, 173);
 }
-.blue{
+blue{
     text-decoration: none;
     color: rgb(130, 149, 173);
 }
