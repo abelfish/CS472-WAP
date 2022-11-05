@@ -50,9 +50,8 @@ nav {
 #navs {
 
     margin-top: 16px;
-    position: float;
+    /* position: float; */
     float: right;
-
     text-align: center;
 
 
