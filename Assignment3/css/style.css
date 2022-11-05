@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400&display=swap');
 
 
 body {
@@ -8,71 +8,90 @@ body {
     text-decoration: none;
     margin: 0;
     padding: 0;
-    font-family: system-ui,'Courier New', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 
 a {
+
     text-decoration: none;
     color: black;
 }
 
 .brand {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 400;
     display: inline;
     vertical-align: middle;
 }
 
 .heading {
+
     display: inline;
+    width: 100px;
 
 }
 
 #logo {
 
+
     vertical-align: middle;
 }
 
 nav {
+
     width: 100vw;
     height: 60px;
-  
+
 
 }
 
 #navs {
-    padding-block-end: 0;
-    padding-left: 800px;
+
+    margin-top: 16px;
+    position: float;
+    float: right;
+
     text-align: center;
-    
+
 
 }
 
 nav a {
+
     /* font-size: larger; */
     vertical-align: middle;
     padding-right: 1em;
 }
 
 span {
+
     font-size: 19px;
     padding-right: 8px;
     vertical-align: middle;
 }
 
 header {
+    text-decoration: none;
     background-color: rgb(55, 71, 119);
     padding: 1em;
     color: white;
     text-align: center;
     
+
 }
-.container{
+header>h2{
+    font-weight: 300;
+}
+
+
+.container {
     margin-left: 50px;
 }
 
-#leftbox,#rightbox{
+#leftbox,
+#rightbox {
     margin-top: 50px;
     margin-inline: -3px;
 
@@ -84,112 +103,140 @@ header {
     width: 700px;
     height: 450px;
     text-align: center;
-   
-}
-#leftbox{
-    border-left: 0ch;
-}
-#rightbox{
-    border-right: 0;
-    vertical-align: top ;
+
 }
 
-button{
-    background-color: white; /* Green */
+#leftbox {
+    border-left: 0ch;
+}
+
+#rightbox {
+    border-right: 0;
+    vertical-align: top;
+}
+
+button {
+    background-color: white;
     border: 1px solid lightgray;
-    /* padding: 15px 32px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+ 
     margin: 4px 2px;
     cursor: pointer;
-    width: 420px;
-    height: 50px;
+    border-radius: 3px;
+    width: 400px;
+    height: 40px;
     vertical-align: middle;
-    border-radius: 5px;
-}
-#azure{
-    /* padding-bottom: 10px; */
-    
+ 
 }
 
-#button1{
+
+
+#button1 {
+    margin-top: 20px;
     color: white;
     background-color: black;
-    width: 420px;
-    height: 50px;
+    width: 406px;
+    height: 46px;
     font-size: 20px;
 }
-div p{
+
+div>p {
     margin: 1em;
     vertical-align: top;
     text-align: justify;
-    padding-left: 8em;
+    padding-left: 7em;
     padding-right: 8em;
-    font-weight: bold;
+    font-weight: normal;
 }
-#button2{
-    margin-right: 260px;
+
+#button2 {
+    margin-right: 270px;
     color: white;
     background-color: black;
-    width: 185px;
+    width: 170px;
     height: 40px;
     font-size: 20px;
     text-align: center;
-    padding-top: 10px;
     vertical-align: middle;
 }
 
-#l{
+#l {
     color: gray;
     font-weight: lighter;
     padding-right: 130px;
-    margin-bottom: 1px;    
+    margin-bottom: 1px;
 }
-#l2{
+
+#l2 {
     color: grey;
     font-weight: lighter;
     text-align: center;
 }
-#u{
-    
+
+#u {
+
     color: gray;
     font-weight: lighter;
     padding-right: 280px;
-    margin-bottom: 1px;    
+    margin-bottom: 1px;
 }
-#p{
+
+#p {
     color: gray;
     font-weight: lighter;
     padding-right: 340px;
-    margin-bottom: 1px;    
+    margin-bottom: 1px;
 
 }
-#check{
+
+#check {
     color: gray;
-    font-weight: lighter;
-    padding-right: 135px;
-    margin-bottom: 1px;    
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+
+#pass {
+    font-size: 15px;
+    color: gray;
+    font-weight: 400;
+    padding-left: 165px;
+    margin-top: 5px;
+    margin-bottom: 1px;
 }
 
 
-h3{
-    padding-right: 30px;
+h3 {
+    /* padding-right: 30px; */
+    position: relative;
+    right: 160px;
     font-size: 30px;
+    font-weight: 400;
     margin-bottom: -10px;
 }
-.textfield{
+
+.textfield {
+    margin-top: 5px;
+    border-radius: 3px;
     width: 400px;
     height: 40px;
-    border-color: rgb(10, 151, 238);
+    border: 1px solid grey;
+}
+.textfield:focus{
+    outline: none;
+    border: 2px solid rgb(10, 151, 238);
 }
 
-#pass{
-    color: rgb(130, 149, 173);
-}
-blue{
+
+
+.blue {
     text-decoration: none;
-    color: rgb(130, 149, 173);
+    color: rgb(10, 151, 238);
 }
-
+#rightbox img{
+    position: relative;
+    padding-right: 100px;
+}
