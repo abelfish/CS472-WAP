@@ -86,18 +86,20 @@ header>h2{
 
 
 .container {
-    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 #leftbox,
 #rightbox {
+    position:relative;
     margin-top: 50px;
-    margin-inline: -3px;
-
-    /* margin-left: 45px; */
+    
     border-inline: 1px solid rgb(225, 225, 225);
 
-    /* border-collapse: collapse; */
+    border-collapse: collapse;
     display: inline-block;
     width: 700px;
     height: 450px;
@@ -164,7 +166,7 @@ div>p {
 #l {
     color: gray;
     font-weight: lighter;
-    padding-right: 130px;
+    padding-right: 145px;
     margin-bottom: 1px;
 }
 
@@ -178,7 +180,7 @@ div>p {
 
     color: gray;
     font-weight: lighter;
-    padding-right: 280px;
+    padding-right: 270px;
     margin-bottom: 1px;
 }
 
@@ -188,6 +190,9 @@ div>p {
     padding-right: 340px;
     margin-bottom: 1px;
 
+}
+label{
+    font-weight: 400;
 }
 
 #check {
