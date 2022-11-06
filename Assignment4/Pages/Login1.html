@@ -5,21 +5,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Login 1</title>
 </head>
 
 <body>
-    <p id="u">Email address</p>
-    <input type="text" placeholder="Enter email" class="textfield">
-    <p id="p">We'll never share your email with anyone else</p>
-    <p id="p">Password</p>
-    <input type="text" placeholder="Password" class="textfield"><br>
-    <span id="check">
-        <label for="Check"><input type="checkbox"> Check me out</label>
-        <button>Submit</button>
 
-    </span>
+    <form action="#" autocomplete=“on”>
+        <label for="email">Email address</label>
+        <input type="email" placeholder="Enter email">
+        <p>We'll never share your email with anyone else.</p>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}$">
+
+        <label for="text">URL</label>
+        <input type="text" placeholder="Input URL" pattern="^http[s]?:\/\/.+">
+
+        <label id="check"><input type="checkbox">Check me out</label>
+        <input type="submit">
+    </form>
+
+
+
+
 
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <body>
+
+    <div class="container">
+        <p>Email address</p>
+        <input type="email" placeholder="Enter email" class="textfield">
+        <p id="p">We'll never share your email with anyone else.</p>
+        <p>Password</p>
+        <input type="password" placeholder="Password" class="textfield>
+        <span id="check">
+            <label for="Check"><input type="checkbox"> Check me out</label>
+            <button type = "button">Submit</button>
+        </span>
+    </div>
+
+</body> -->
 
 </html>
