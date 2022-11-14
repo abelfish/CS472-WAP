@@ -1,0 +1,45 @@
+1.  undefined
+    =>8
+    =>10
+    =>9
+    =>10
+    =>1
+
+2.  Global scope is scope that exists outside of a function
+    Local scope is scope with in a function. Since ES6 and with introduction of 
+    let and const local scope has further been divided into function and block scope
+
+3.  a.  no
+    b.  yes
+    c.  no
+    d.  yes 
+    e.  yes
+
+4.  =>81
+    =>25
+
+5.  =>10
+
+6.  const count = {
+
+	    counter: 0,
+	    add: function () {
+		    return function () {
+			    this.counter += 1;
+			    return this.counter;
+		    }
+	    }(),
+
+	    reset: function () {
+		    return function () {
+			    this.counter = 0;
+			    return this.counter;
+		    }
+	    }()
+
+    }
+
+7.  free Variable:  the variable counter is the free variable. A free variable is a variable declared outside the
+                    scope of a function.
+
+8.  

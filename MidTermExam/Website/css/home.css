@@ -1,0 +1,39 @@
+
+div.container{
+    margin-top: 30px;
+}
+div.col-8,div.col-4{
+    margin-top: 30px;
+}
+footer{
+    display: flex;
+    width: 100%;
+    background-color: lightgrey;
+    
+    height: 5vh;
+    position: fixed;
+    bottom: 0px;
+    align-items: center;
+}
+.leftFoot{
+    width: 30vw;
+    margin-left: 20px;
+    
+}
+.rightFoot{
+    width: 30vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+
+
+}
+.middleFoot{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+}
+a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
