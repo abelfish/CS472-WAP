@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100vw;
+    height: 55px;
+    background-color: black !important;
+}
+
+#leftnav {
+    justify-content: center;
+}
+
+#rightnav {
+    margin-right: 10px;
+}
+
+#brand {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px
+}
+
+input[type="text"] {
+    width: 10em;
+    height: 35px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+div>p {
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+input[type="submit"] {
+    margin-left: 5px;
+    background-color: grey;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    width: 5em;
+    height: 37px;
+}

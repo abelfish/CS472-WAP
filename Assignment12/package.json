@@ -1,0 +1,15 @@
+{
+  "name": "assignment12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "AdderWebServer.js",
+  "scripts": {
+    "dev": "nodemon AdderWebServer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Abel Kifletsion",
+  "license": "ISC"
+}

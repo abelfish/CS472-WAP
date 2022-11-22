@@ -1,45 +1,87 @@
-1.  undefined
-    =>8
-    =>10
-    =>9
-    =>10
-    =>1
-
-2.  Global scope is scope that exists outside of a function
-    Local scope is scope with in a function. Since ES6 and with introduction of 
-    let and const local scope has further been divided into function and block scope
-
-3.  a.  no
-    b.  yes
-    c.  no
-    d.  yes 
-    e.  yes
-
-4.  =>81
-    =>25
-
-5.  =>10
-
-6.  const count = {
-
-	    counter: 0,
-	    add: function () {
-		    return function () {
-			    this.counter += 1;
-			    return this.counter;
-		    }
-	    }(),
-
-	    reset: function () {
-		    return function () {
-			    this.counter = 0;
-			    return this.counter;
-		    }
-	    }()
-
-    }
+6.  const count = (function () {
+	    let counter = 0;
+        function reset() {
+	        counter = 0;
+	        return counter;
+	    }
+	    function add() {
+	        return counter + 1;
+	    }
+	    return {
+	     add: add,
+	    reset: reset,
+	    };
+    })();
+  
 
 7.  free Variable:  the variable counter is the free variable. A free variable is a variable declared outside the
                     scope of a function.
 
-8.  
+8.  const makeAdder = function (inc) {
+        let counter = 0;
+        return function () {
+            counter = counter += inc;
+            return counter;
+        };
+    };
+
+9.  This can be done in several ways. You can wrap these functions and declarations in a single function and 
+    execute the function immediately(IIFE). We can also use ES6 block scope instead of a wrapper function and
+    make the declarations const and let.
+
+10.     const Employee = (function () {
+            let name = "";
+            let age = 0;
+            let salary = 0;
+            const setAge = function (newAge) {
+                age = newAge;
+            };
+            const setSalary = function (newSalary) {
+                salary = newSalary;
+            };
+            const setName = function (newName) {
+                name = newName;
+            };
+            const getName = function () {
+                return name;
+            };
+            const getAge = function () {
+                return age;
+            };
+            const getSalary = function () {
+                return salary;
+            };
+            const increaseSalary = function (percentage) {
+                addedSalary = (getSalary() * percentage) / 100;
+
+                  setSalary(salary + addedSalary);
+            };
+            const incrementAge = function () {
+                setSalary(getSalary() + 1);
+            };
+            return {
+                setName: setName,
+                setSalary: setSalary,
+                setAge: setAge,
+                increaseSalary: increaseSalary,
+                incrementAge: incrementAge,
+            };
+    })();
+
+
+11. 
+Employee.address = { street: "", city: "", state: "", zipcode: "" };
+Employee.setAddress = function (street, city, state, zipcode) {
+  Employee.address = {
+    street: street,
+    city: city,
+    state: state,
+    zipcode: zipcode,
+  };
+};
+Employee.getAddress = function () {
+  return Employee.address;
+};
+    
+
+ 
