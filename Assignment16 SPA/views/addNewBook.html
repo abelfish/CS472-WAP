@@ -1,0 +1,100 @@
+<script
+  src="./js/modules/services/controller/formController.js"
+  type="module"
+></script>
+<div class="container" id="mainView">
+  <div class="row">
+    <h3 class="text-primary">New Book Form</h3>
+  </div>
+  <div class="row">
+    <h6>
+      <strong>Note:</strong> Form fields marked with asterisk(*) are required
+    </h6>
+  </div>
+  <form action="#" id="form">
+    <div class="mb-3">
+      <label for="bookTitle" class="form-label">*Book Title</label>
+      <input
+        type="text"
+        class="form-control"
+        id="bookTitle"
+        name="bookTitle"
+        required
+      />
+      <div class="row">
+        <div class="col-6">
+          <label for="isbn" class="form-label">*ISBN</label>
+          <input
+            type="text"
+            class="form-control"
+            name="isbn"
+            id="isbn"
+            required
+          />
+        </div>
+        <div class="col-6">
+          <label for="overdueFee" class="form-label"
+            >*Overdue Fee Per Day</label
+          >
+          <input
+            type="number"
+            step="0.01"
+            class="form-control"
+            name="overdueFee"
+            id="overdueFee"
+            required
+          />
+          <p class="txt">
+            Enter a valid decimal amount; in dollars and cents; no comma(e.g
+            1.99)
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <label for="publisher" class="form-label">*Publisher</label>
+          <input
+            type="text"
+            class="form-control"
+            name="publisher"
+            id="publisher"
+            required
+          />
+        </div>
+        <div class="col-6">
+          <label for="datePublished" class="form-label">*Date Published</label>
+          <input
+            type="text"
+            class="form-control"
+            name="datePublished"
+            id="datePublished"
+            placeholder="yyyy-mm-dd"
+            required
+          />
+        </div>
+      </div>
+      <div class="d-flex gap-1 justify-content-end">
+        <div>
+          <input
+            style="margin-right: 20px"
+            class="w-auto form-control btn-outline-warning"
+            type="reset"
+            value="Reset"
+            name="reset"
+            id="reset"
+          />
+        </div>
+
+        <div>
+          <input
+            class="w-auto form-control btn-outline-success"
+            type="submit"
+            value="Save Book"
+            name="reset"
+            id="reset"
+          />
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

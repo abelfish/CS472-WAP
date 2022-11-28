@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.2/cerulean/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/main-styles.css" />
+    <script
+      src="./js/modules/services/controller/formController.js"
+      defer
+      type="module"
+    ></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      defer
+    ></script>
+    <title>The eLibrary</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-danger text-white">
+        <div class="container-fluid text-white">
+          <a class="navbar-brand text-white" href="./index.html"
+            >The eLibrary <sup>&reg; </sup> : : : a CS472 Demo WebApp Project</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white">|</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white">|</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Virtual Tour</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white">|</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  id="booksButton"
+                  class="nav-link text-white"
+                  href="./Books.html"
+                  >Books</a
+                >
+              </li>
+            </ul>
+          </div>
+          <span>Welcome, Guest</span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container" id="mainView">
+        <div class="row">
+          <h3 class="text-danger">New Book Form</h3>
+        </div>
+        <div class="row">
+          <h6>
+            <strong>Note:</strong> Form fields marked with asterisk(*) are
+            required
+          </h6>
+        </div>
+        <form action="/submit-form" id="form">
+          <div class="mb-3">
+            <label for="bookTitle" class="form-label">*Book Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="bookTitle"
+              name="bookTitle"
+              required
+            />
+            <div class="row">
+              <div class="col-6">
+                <label for="isbn" class="form-label">*ISBN</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="isbn"
+                  id="isbn"
+                  required
+                />
+              </div>
+              <div class="col-6">
+                <label for="overdueFee" class="form-label"
+                  >*Overdue Fee Per Day</label
+                >
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  name="overdueFee"
+                  id="overdueFee"
+                  required
+                />
+                <p class="txt">
+                  Enter a valid decimal amount; in dollars and cents; no
+                  comma(e.g 1.99)
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <label for="publisher" class="form-label">*Publisher</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="publisher"
+                  id="publisher"
+                  required
+                />
+              </div>
+              <div class="col-6">
+                <label for="datePublished" class="form-label"
+                  >*Date Published</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  name="datePublished"
+                  id="datePublished"
+                  placeholder="mm/dd/yyyy"
+                  required
+                />
+              </div>
+            </div>
+            <div class="d-flex gap-1 justify-content-end">
+              <div>
+                <input
+                  style="margin-right: 20px"
+                  class="w-auto form-control btn-outline-warning"
+                  type="reset"
+                  value="Reset"
+                  name="reset"
+                  id="reset"
+                />
+              </div>
+
+              <div>
+                <input
+                  class="w-auto form-control btn-outline-success"
+                  type="submit"
+                  value="Save Book"
+                  name="reset"
+                  id="reset"
+                />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <span style="margin-left: 1em">::: CS472-WAP</span>
+        <span style="float: right; margin-right: 1em"
+          >eLibrary &copy; March 2022</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>

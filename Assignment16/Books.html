@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.2/cerulean/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/main-styles.css" />
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      defer
+    ></script>
+    <script defer src="./js/modules/services/controller/bookController.js" type="module"></script>
+    <title>The eLibrary</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-danger text-white">
+        <div class="container-fluid text-white">
+          <a class="navbar-brand text-white" href="./index.html"
+            >The eLibrary <sup>&reg; </sup> : : : a CS472 Demo WebApp Project</a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white">|</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white">|</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Virtual Tour</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white">|</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./Books.html">Books</a>
+              </li>
+            </ul>
+          </div>
+          <span>Welcome, Guest</span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container" id="mainView">
+        <div class="row">
+          <div class="col-6">
+            <h3 class="text-danger">Books in Our Collection</h3>
+          </div>
+          <div class="col-6 justify-content-end d-flex">
+            <a
+              href="./newBook.html"
+              class="w-auto form-control btn-info text-light btn-group-lg text-decoration-none"
+            >
+              Add New Book
+            </a>
+          </div>
+        </div>
+        <div class="col-12">
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>ISBN</th>
+                <th>BookTitle</th>
+                <th>Overdue Fee</th>
+                <th>Publisher</th>
+                <th>Date Published</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+              <tr>
+                Loading
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <span style="margin-left: 1em"> ::: CS472-WAP</span>
+        <span style="float: right; margin-right: 1em"
+          >eLibrary &copy; March 2022</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>

@@ -191,32 +191,29 @@
 // console.log(suzi.__proto__);
 // console.log(typeof suzi);
 
-class User {
-  constructor(name = "Anonymous") {
-    this.name = name;
-  }
-  sayHi() {
-    console.log(`Hello, ${this.name}!`);
-  }
-}
+// class User {
+//   constructor(name = "Anonymous") {
+//     this.name = name;
+//   }
+//   sayHi() {
+//     console.log(`Hello, ${this.name}!`);
+//   }
+// }
 
-class Employee extends User{
-  constructor(name,salary){
-    super(name);
-    this.salary = salary;
-  }
+// class Employee extends User{
+//   constructor(name,salary){
+//     super(name);
+//     this.salary = salary;
+//   }
 
-}
-const emp = new Employee("test","9023");
-const user1 = new User("test");
+// }
+// const emp = new Employee("test","9023");
+// const user1 = new User("test");
 
-console.log(emp.__proto__);
+// console.log(emp.__proto__);
 
-console.log(Employee.prototype.__proto__);
-console.log(Employee.__proto__);
-
-
-
+// console.log(Employee.prototype.__proto__);
+// console.log(Employee.__proto__);
 
 // fred = new User();
 // console.log(fred);
@@ -227,3 +224,91 @@ console.log(Employee.__proto__);
 // console.log(bob);
 // bob.sayHi();
 
+const account = {
+  accountNo: 1001,
+  customer: {
+    customerld: "0157",
+    firstName: " Anna ",
+    lastName: " Smith ",
+  },
+  balance: 1750.95,
+  getBalance: function () {
+    const self = this;
+    const innerFunction = function (param) {
+      self.balance = 5000;
+    };
+    innerFunction();
+    return this.balance;
+  },
+};
+console.log(account.getBalance());
+
+class Account {
+  #accountNumber;
+  #customerName;
+  #balance;
+  constructor(accountNumber, customerName, balance) {
+    this.#accountNumber = accountNumber;
+    this.#customerName = customerName;
+    this.#balance = balance;
+  }
+
+  getAccountNumber() {
+    return this.#accountNumber;
+  }
+}
+class CheckingAccount extends Account {
+  #monthlyFee;
+  constructor(accountNumber, customerName, balance, monthlyFee) {
+    super(accountNumber, customerName, balance);
+    this.#monthlyFee = monthlyFee;
+  }
+}
+.__proto__
+
+const acct = new Account(1234, "Tesfay", 12314.12);
+console.log(acct.getAccountNumber());
+
+const Employee2 = (function () {
+  let name = "";
+  let age = 0;
+  let salary = 0;
+
+  function setAge(newAge) {
+    age = newAge;
+  }
+  function setSalary(newSalary) {
+    salary = newSalary;
+  }
+  function setName(newName) {
+    name = newName;
+  }
+  function getAge() {
+    return age;
+  }
+  function getName() {
+    return name;
+  }
+  function getSalary() {
+    return salary;
+  }
+  function increaseSalary(percentage) {
+    const addedSalary = getSalary() * percentage;
+    salary += addedSalary;
+  }
+  function incrementAge() {
+    setAge(getAge() + 1);
+  }
+  return {
+    setAge: setAge,
+    setSalary: setSalary,
+    setName: setName,
+    increaseSalary: increaseSalary,
+    incrementAge: incrementAge,
+  };
+})();
+
+$("#element").on("click","button", function(evt){
+    evt.preventDefault();
+    evt.stopImmediatePropagation();
+} )

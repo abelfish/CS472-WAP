@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.2/cosmo/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/main-styles.css" />
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      defer
+    ></script>
+    <script defer src="./js/app.js" type="module"></script>
+    <title>The eLibrary</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary text-white">
+        <div class="container-fluid text-white">
+          <a class="navbar-brand text-white" id="home" href="#home"
+            >The eLibrary <sup>&reg; </sup> : : : a CS472 Demo WebApp Project</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white">|</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white"
+                  aria-current="page"
+                  href="#aboutUs"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white">|</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Virtual Tour</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white">|</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" id="books" href="#books"
+                  >Books</a
+                >
+              </li>
+            </ul>
+          </div>
+          <span>Welcome, Guest</span>
+        </div>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="container" id="mainView">
+        <div class="row">
+          <h3 class="text-primary">Welcome to the eLibrary<sup>&reg; </sup></h3>
+        </div>
+        <hr />
+        <div class="row-cols-1">
+          <img src="./images/image.jpg" alt="logo" />
+        </div>
+        <div class="row-cols-1">
+          Lorem ipsum adipisicing elit. Quidem tempora delectus doloremque
+          mollitia? Dolorem ipsa corrupti,<a href="#aboutUs"> about us</a>
+          ipsum eum debitis necessitatibus maxime labore sapiente neque
+          voluptatibus nulla iusto reiciendis eligendi maiores, esse aliquid
+          quod nam repudiandae numquam repellat omnis dolorum. Nostrum est
+          <a href="#">take a virtual tour</a> recusandae ratione modi
+          perferendis. Rerum excepturi impedit architecto praesentium.
+        </div>
+        <div class="row-cols-1">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
+          voluptatum, maxime dignissimos reiciendis sapiente neque delectus
+          quidem consectetur aperiam doloremque officiis dolorum enim esse
+          quaerat, magni incidunt dolor dolore quod vitae eligendi. Voluptate
+          aliquid debitis in ad iusto ea error consequuntur explicabo tempora
+          placeat molestiae, laudantium reiciendis nesciunt magnam laboriosam
+          inventore distinctio dolorem? Voluptatum dolorem tenetur placeat ipsum
+          minus culpa? Commodi rem doloribus veritatis asperiores quaerat
+          doloremque, accusantium minima quia.
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore amet
+          atque obcaecati ab animi quam, <a href="#">Sign in</a> eius sit
+          accusamus itaque mollitia provident recusandae magnam voluptatum
+          voluptatem?
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <span style="margin-left: 1em">Abel F. Kifletsion ::: CS472-WAP</span>
+        <span style="float: right; margin-right: 1em"
+          >eLibrary &copy; March 2022</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
